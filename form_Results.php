@@ -18,5 +18,14 @@ if($_POST){
     
 
 }
+
+
+$validationOfPassword = ValidationOfPassword($_POST['password_1']);
+echo'</br>' .$validationOfPassword["message"];
+if(!$validationOfPassword["isValid"]){
+
+}
+
 ?>
+</br>
 <a href="index.php">Retour</a>
