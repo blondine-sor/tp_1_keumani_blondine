@@ -26,6 +26,16 @@ function ValidationOfPassword($passwordToValidate){
     return $validation;
     
 }
+// fonction de validation de la longeur du mot de passe
+
+function AddSaltToPassword($passwordToSalt){
+    $saltToAdd = "BcjC2a34d@#";
+    $saltedPassword = $saltToAdd.$passwordToSalt.$saltToAdd;
+    return $saltedPassword;
+}
+//ajout du <<Salt>> au mot de passe
+
+
 
 
 ?>

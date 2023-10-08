@@ -22,9 +22,12 @@ if($_POST){
 
 $validationOfPassword = ValidationOfPassword($_POST['password_1']);
 echo'</br>' .$validationOfPassword["message"];
+//Validation de la longeur du mot de passe
 if(!$validationOfPassword["isValid"]){
 
 }
+$saltedPassword = AddSaltToPassword($_POST['password_1']);
+var_dump($saltedPassword);
 
 ?>
 </br>
