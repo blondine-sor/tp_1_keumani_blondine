@@ -35,6 +35,10 @@ function AddSaltToPassword($passwordToSalt){
 }
 //ajout du <<Salt>> au mot de passe
 
+function EncryptedPassword($saltedPassword){
+    $encryptedPassword = sha1($saltedPassword);
+    return $encryptedPassword;
+}
 
 
 
