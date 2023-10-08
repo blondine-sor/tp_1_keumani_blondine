@@ -11,7 +11,7 @@ function ValidationOfPassword($passwordToValidate){
     if($passwordLength < 6){
         $validation =[
             "isValid" => false,
-            "message" => " Le Mot de Passe est trop court "
+            "message" => " Votre Mot de Passe est trop court "
         ];
         
         
@@ -19,7 +19,7 @@ function ValidationOfPassword($passwordToValidate){
     elseif($passwordLength > 10){
         $validation = [
             "isValid" => false,
-            "message" => "Le Mot de Passe est trop long"
+            "message" => "Votre Mot de Passe est trop long"
         ];
     
     }
@@ -39,7 +39,7 @@ function EncryptedPassword($saltedPassword){
     $encryptedPassword = sha1($saltedPassword);
     return $encryptedPassword;
 }
-
+//encodage du nouveau mot de passe
 
 
 ?>

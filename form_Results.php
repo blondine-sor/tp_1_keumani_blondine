@@ -11,20 +11,22 @@ if($_POST){
     }//Verification du champ du mot de passes
 
     else{
-        echo'<h3> Mot de passe : '.sha1($password_1);echo'</h3>';
+       
         $validationOfPassword = ValidationOfPassword($_POST['password_1']);
-echo'</br>' .$validationOfPassword["message"];
-//Validation de la longeur du mot de passe
+          echo'</br>' .$validationOfPassword["message"];
+           //Validation de la longeur du mot de passe
 
-if($validationOfPassword["isValid"]){
+      if($validationOfPassword["isValid"]){
       
     $saltedPassword = AddSaltToPassword($_POST['password_1']);
-var_dump($saltedPassword);
-$encodedPassword = EncryptedPassword($_POST['password_1']);
-var_dump($encodedPassword);
+
+    $encodedPassword = EncryptedPassword($saltedPassword);
+        echo'</br>';
+        echo'<h2> Votre mot de passe a été creer!'; echo'</h2>';
+        echo'<h3> Mot de passe Validée : '.$encodedPassword;echo'</h3>'; 
 }
 else{
-    echo '</br><h2>"Wrong Password!!!! Please enter another!"</h2>';
+    echo '</br><h2>"ERREUR!!!! Veuillez Entrer un nouveau!"</h2>';
 }
 
        
