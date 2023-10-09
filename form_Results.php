@@ -22,8 +22,8 @@ if($_POST){
 
     $encodedPassword = EncryptedPassword($saltedPassword);
         echo'</br>';
-        echo'<h2> Votre mot de passe a été creer!'; echo'</h2>';
-        echo'<h3> Mot de passe Validée : '.$encodedPassword;echo'</h3>'; 
+        echo'<h2> Votre mot de passe a été créé!'; echo'</h2>';
+        echo'<h3> Mot de passe Validé : '.$encodedPassword;echo'</h3>'; 
 }
 else{
     echo '</br><h2>"ERREUR!!!! Veuillez Entrer un nouveau!"</h2>';
