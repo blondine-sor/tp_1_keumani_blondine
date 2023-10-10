@@ -6,3 +6,5 @@ Fonction de la validation du mot de passe avec la fonction ValidationOfPassword 
 Fonction du <Salt> à concatèner au mot de passe validé
 Fonction d'encodage du nouveau mot de passe
 Un message personalisé sera retourné si le mot de passe est valide ou pas
+Ajout dela confirmation du mot de passe
+Message de confirmation du mot de passe

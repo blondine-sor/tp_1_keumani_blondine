@@ -40,6 +40,20 @@ function EncryptedPassword($saltedPassword){
     return $encryptedPassword;
 }
 //encodage du nouveau mot de passe
+function ConfirmationOfPassword ($passwordConfirmation,$passwordToConfirm){
+    
+    if($passwordConfirmation == $passwordToConfirm){
+        
+            echo'</br>';
+            echo'<h2> HOURA!!! Votre Mot De Passe A Eté Confirmé </h2>'; 
+    }
+        else{
+            echo'</br>';
+            echo'<h2> BOUUUH!!! Mot De Passe Invalide</h2>';
+        }
+    
+}
+
 
 
 ?>

@@ -2,6 +2,11 @@
 require_once("functions.php");
 //utilise le script des fonctions
 
+echo'<h1> Validation de Mot de passe</h1>';
+
+echo'<p></p>';
+
+
 if($_POST){
     $password_1 = $_POST["password_1"];
 
@@ -23,20 +28,31 @@ if($_POST){
     $encodedPassword = EncryptedPassword($saltedPassword);
         echo'</br>';
         echo'<h2> Votre mot de passe a été créé!'; echo'</h2>';
-        echo'<h3> Mot de passe Validé : '.$encodedPassword;echo'</h3>'; 
-}
-else{
-    echo '</br><h2>"ERREUR!!!! Veuillez Entrer un nouveau!"</h2>';
-}
+        echo'<h3> Mot de passe Validé : '.$encodedPassword;echo'</h3>';
+        echo'<h3> Veuillez  confirmer le mot de passe</h3>';
+       
+      }
+     else{
+       echo '</br><h2>"ERREUR!!!! Veuillez Entrer un nouveau!"</h2>';
 
+      }
+    
+    }
        
-       
+ ?>
+ <?php      
         
     }//Verification du  champ de texte
     
+  require_once("index_2.php");
+  
     
 
-}
+
+
+
+
+
 
 
 ?>

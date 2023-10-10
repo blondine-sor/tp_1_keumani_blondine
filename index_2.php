@@ -11,11 +11,12 @@
 </head>
 <body>
     
-<form name="form1" method="post" action="form_Results.php">
+<form name="form2" method="post" action="final_Results.php">
         <fieldset>
             <legend><h2>Formulaire</h2></legend>
-    <label for="password1">Password</label>
-    <input type ="password" id="motdepasse" name="password_1" value="">
+    <input type="password" id="motdepasse" name="password" value="<?php echo $password_1?>">
+    <label for="password2">Confirmation of Password</label>
+    <input type ="password" id="motDePasse_2" name="password_2" value="">
 
 </br>
     <button type="submit">Valider</button>
