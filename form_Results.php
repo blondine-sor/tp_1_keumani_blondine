@@ -30,6 +30,8 @@ if($_POST){
         echo'<h2> Votre mot de passe a été créé!'; echo'</h2>';
         echo'<h3> Mot de passe Validé : '.$encodedPassword;echo'</h3>';
         echo'<h3> Veuillez  confirmer le mot de passe</h3>';
+        require_once("index_2.php");
+  
        
       }
      else{
@@ -44,8 +46,7 @@ if($_POST){
         
     }//Verification du  champ de texte
     
-  require_once("index_2.php");
-  
+ 
     
 
 
